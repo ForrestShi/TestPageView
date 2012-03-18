@@ -20,6 +20,8 @@
 		18487FFB15157A03000B8AA4 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 18487FF215157A03000B8AA4 /* Red.png */; };
 		18487FFC15157A03000B8AA4 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 18487FF315157A03000B8AA4 /* Yellow.png */; };
 		18487FFE15157EAB000B8AA4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18487FFD15157EAB000B8AA4 /* README */; };
+		1848800115158210000B8AA4 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848800015158210000B8AA4 /* SoundEffect.m */; };
+		184880031515835D000B8AA4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184880021515835D000B8AA4 /* AudioToolbox.framework */; };
 		18CE1D6D150B9FA600061608 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE1D6C150B9FA600061608 /* UIKit.framework */; };
 		18CE1D6F150B9FA600061608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE1D6E150B9FA600061608 /* Foundation.framework */; };
 		18CE1D71150B9FA600061608 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE1D70150B9FA600061608 /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		18487FF215157A03000B8AA4 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		18487FF315157A03000B8AA4 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
 		18487FFD15157EAB000B8AA4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		18487FFF15158210000B8AA4 /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffect.h; sourceTree = "<group>"; };
+		1848800015158210000B8AA4 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffect.m; sourceTree = "<group>"; };
+		184880021515835D000B8AA4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18CE1D68150B9FA600061608 /* TestPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE1D6C150B9FA600061608 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18CE1D6E150B9FA600061608 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184880031515835D000B8AA4 /* AudioToolbox.framework in Frameworks */,
 				18487FEA151578F0000B8AA4 /* QuartzCore.framework in Frameworks */,
 				18487FE81515788A000B8AA4 /* OpenGLES.framework in Frameworks */,
 				18CE1D6D150B9FA600061608 /* UIKit.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		18CE1D6B150B9FA600061608 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				184880021515835D000B8AA4 /* AudioToolbox.framework */,
 				18487FE9151578F0000B8AA4 /* QuartzCore.framework */,
 				18487FE71515788A000B8AA4 /* OpenGLES.framework */,
 				18CE1D6C150B9FA600061608 /* UIKit.framework */,
@@ -125,6 +132,8 @@
 				18CE1D85150B9FA600061608 /* ModelController.m */,
 				18487FE315157857000B8AA4 /* PaintingView.h */,
 				18487FE415157857000B8AA4 /* PaintingView.m */,
+				18487FFF15158210000B8AA4 /* SoundEffect.h */,
+				1848800015158210000B8AA4 /* SoundEffect.m */,
 				18CE1D87150B9FA600061608 /* MainStoryboard.storyboard */,
 				18CE1D73150B9FA600061608 /* Supporting Files */,
 			);
@@ -229,6 +238,7 @@
 				18CE1D83150B9FA600061608 /* DataViewController.m in Sources */,
 				18CE1D86150B9FA600061608 /* ModelController.m in Sources */,
 				18487FE515157857000B8AA4 /* PaintingView.m in Sources */,
+				1848800115158210000B8AA4 /* SoundEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

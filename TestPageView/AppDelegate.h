@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class PaintingView;
+@class SoundEffect;
+
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end
